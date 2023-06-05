@@ -1,11 +1,11 @@
 import React from 'react';
 
-const WeaApp = ({ data }) => {
-  const temperature = data.main.temp;
-  const weatherDescription = data.weather[0].description;
-  const humidity = data.main.humidity;
-  const wind = data.wind.speed;
-
+const WeaApp = ({main}) => {
+  const temperature = main.temp;
+  const weatherDescription = main.weather[0].description;
+  const humidity = main.main.humidity;
+  const wind = main.wind.speed;
+ 
   return (
     <div className="weather-details">
       <h2>Wheather App</h2>

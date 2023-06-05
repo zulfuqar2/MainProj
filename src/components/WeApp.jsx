@@ -12,11 +12,11 @@ function WeApp() {
   });
 
 const APIKEY ='47b8c411cbaefbb5c821ccfce0e210fa';
- async function weatherData(e){
+ async function weatherMain(e){
   e.preventDefault();
   if(form.city ===''){
     alert('Please Enter City location');
-
+    
   }else{
    const data =await fetch(`https://api.openweathermap.org/data/2.5/weather?q= ${form.city},${form.country}&APPID=${APIKEY}`)
    .then((res)=>res.json());
@@ -24,6 +24,7 @@ const APIKEY ='47b8c411cbaefbb5c821ccfce0e210fa';
    setWeather(data)
   }
  }
+
 
  const handleChange =(e) =>{
   let name =e.target.name;
@@ -38,6 +39,7 @@ const APIKEY ='47b8c411cbaefbb5c821ccfce0e210fa';
     setform({...form,country : value});
   }
  }
+ console.log('ding',Weather)
   return (
     <>
     <div className='weapp'>
@@ -46,15 +48,16 @@ const APIKEY ='47b8c411cbaefbb5c821ccfce0e210fa';
       <form action="">
         <input type="text" className='city' placeholder='city' name='city' onChange={(e)=>handleChange(e)} />
         <input type="text"  className='country' placeholder='country' name='country' onChange={(e) =>handleChange(e)} />
-         <button className='subBtn' onClick={(e)=>weatherData(e)}>Check Weather</button>
+         <button className='subBtn' onClick={(e)=>weatherMain(e)}>Check Weather</button>
 
 
       </form>
-      {Weather.data !==undefined?(
+      {Weather.main !==undefined?(
         <div>
-          <WeaApp data ={Weather.data}/>
+          <WeaApp main ={Weather.main}/>
         </div>
       ):null}
+      // Data yoxdu main e gore ele 
 
 
 
