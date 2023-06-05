@@ -17,12 +17,15 @@ form{
     border: 1px solid orange;
     justify-content: center;
     text-align: center;
-    background-image:url(../components/img/2859833.jpg);
+
     background-size: cover;
 
 }
+.whole{
+    background-image:url(../components/img/2859833.jpg);
+}
 .city{
-    width: 33%;
+    width: 50%;
     height: 35px;
     border-radius: 41px;
     text-align: center;
@@ -30,10 +33,16 @@ form{
     background-color: bisque;
     color: black;
     font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.city:hover{
+    background-color:slateblue ;
 }
 
 .country{
-    width: 33%;
+    width: 40%;
     height: 35px;
     border-radius: 41px;
     text-align: center;
@@ -42,6 +51,12 @@ form{
     color: black;
     font-size: 20px; 
     margin: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.country:hover{
+    background-color:slateblue ;
 }
 .subBtn{
     width: 33%;
@@ -49,6 +64,9 @@ form{
     font-size: 16px;
     border-radius: 32px;
     border: 1px solid orange;
+    border: none;
+    background: transparent;
+    color: aliceblue;
 
 }
 .subBtn:hover{
