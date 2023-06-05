@@ -17,8 +17,9 @@ form{
     border: 1px solid orange;
     justify-content: center;
     text-align: center;
-
+    position: absolute;
     background-size: cover;
+    background-image:url(../components/img/2859833.jpg);
 
 }
 .whole{
@@ -47,7 +48,7 @@ form{
     border-radius: 41px;
     text-align: center;
     justify-content: center;
-    background-color: bisque;
+
     color: black;
     font-size: 20px; 
     margin: 10px;
@@ -73,3 +74,24 @@ form{
     background-color:steelblue;
 }
 
+/* .weather-details{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: cadetblue;
+    
+}
+
+.header{
+    font-size: 100px;
+}
+.Degree{
+    justify-content: center;
+    background-color:slategray;
+    color: white;
+    
+} */
