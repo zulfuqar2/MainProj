@@ -17,6 +17,8 @@ form{
     border: 1px solid orange;
     justify-content: center;
     text-align: center;
+    background-image:url(../components/img/2859833.jpg);
+    background-size: cover;
 
 }
 .city{
