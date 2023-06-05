@@ -1,18 +1,29 @@
 import React from 'react';
+import '../components/Wea.css';
+
 
 const WeaApp = ({main}) => {
-  const temperature = main.temp;
-  const weatherDescription = main.weather[0].description;
+ 
+  const temprature = main.main.temp;
+  const weatherDescription = main.weather.description;
+  const weatherDescription2 = main.weather.icon;
   const humidity = main.main.humidity;
   const wind = main.wind.speed;
+  const  sys =main.sys.sunrise;
+  const  sys2 =main.sys.sunset;
+  console.log('we',main)
  
   return (
     <div className="weather-details">
-      <h2>Wheather App</h2>
-      <p>Degree: {temperature}°K</p>
-      <p>if: {weatherDescription}</p>
-      <p>humidtiy: {humidity}%</p>
-      <p>wind:{wind}</p>
+      <h2 className='header'>Wheather App</h2>
+      <p>Degree: {main.main.temp?temprature:null}°K</p>
+      <p>Wheather {main.weather?weatherDescription:null}</p>
+      <p>{main.weather?weatherDescription2:null}</p>
+      <p>humidtiy: {main.main.humidity?humidity:null}%</p>
+      <p>wind:{wind? wind :null}</p>
+      <p>Sunrise :{sys}  <br/>
+         Sunset :{sys2} 
+      </p>
     </div>
   );
 };

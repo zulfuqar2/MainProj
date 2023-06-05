@@ -39,7 +39,7 @@ const APIKEY ='47b8c411cbaefbb5c821ccfce0e210fa';
     setform({...form,country : value});
   }
  }
- console.log('ding',Weather)
+//  console.log('ding',Weather)
   return (
     <>
     <div className='weapp'>
@@ -54,7 +54,7 @@ const APIKEY ='47b8c411cbaefbb5c821ccfce0e210fa';
       </form>
       {Weather.main !==undefined?(
         <div>
-          <WeaApp main ={Weather.main}/>
+          <WeaApp main ={Weather}/>
         </div>
       ):null}
       // Data yoxdu main e gore ele 
