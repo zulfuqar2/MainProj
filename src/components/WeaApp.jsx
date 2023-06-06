@@ -5,6 +5,7 @@ import '../components/Wea.css';
 const WeaApp = ({main}) => {
  
   const temprature = main.main.temp;
+  const tempratureC = Math.round(main.main.temp- 273,15);
   const weatherDescription = main.weather[0].description;
   const weatherDescription2 = main.weather.icon;
   const humidity = main.main.humidity;
@@ -16,11 +17,16 @@ const WeaApp = ({main}) => {
   return (
     <div className="weather-details">
       <h2 className='header'>Wheather App</h2>
-      <p className='Degree'>Degree: {main.main.temp?temprature:null}°K</p>
+      <div className='tem'>
+      <p className='Celcius'> {tempratureC}℃ </p>
+      <p className='Degree'> {main.main.temp?temprature:null}°K</p>
+      
+      </div>
       <p className='Wheather'>Wheather: {main.weather?weatherDescription:null}</p>
       <p className='icon'>{main.weather?weatherDescription2:null}</p>
-      <p className='Huidity'>humidtiy: {main.main.humidity?humidity:null}%</p>
-      <p className='wind'>wind:{wind? wind :null}</p> 
+     
+      <p className='Huidity'>Humidtiy: {main.main.humidity?humidity:null}%</p>
+      <p className='wind'>Wind:{wind? wind :null} km/saat</p> 
 
     </div>
   );

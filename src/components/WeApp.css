@@ -22,9 +22,9 @@ form{
     background-image:url(../components/img/satellite_loop.gif);
 
 }
-.whole{
+/* .whole{
     background-image:url(../components/img/2859833.jpg);
-}
+} */
 .city{
     width: 50%;
     height: 35px;
@@ -32,11 +32,12 @@ form{
     text-align: center;
     justify-content: center;
     background-color: bisque;
-    color: black;
+
     font-size: 20px;
     border: none;
     outline: none;
     background-color: transparent;
+    color: white;
 }
 .city:hover{
     background-color:slateblue ;
@@ -48,13 +49,12 @@ form{
     border-radius: 41px;
     text-align: center;
     justify-content: center;
-
-    color: black;
     font-size: 20px; 
     margin: 10px;
     border: none;
     outline: none;
     background-color: transparent;
+    color: white;
 }
 .country:hover{
     background-color:slateblue ;
