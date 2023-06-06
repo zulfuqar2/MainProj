@@ -2,7 +2,20 @@ import React ,{useState}from 'react'
 import './WeApp.css'
 import WeaApp from '../components/WeaApp'
 
+const successCallback = (position) => {
+  const { latitude, longitude } = position.coords;
+  fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&APPID=${APIKEY}`)
+    .then((res) => res.json())
+    .then((data) => setWeather(data));
+};
 
+const errorCallback = (error) => {
+  console.log(error);
+};
+
+
+
+navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 
 function WeApp() {
   const [Weather,setWeather] = useState([]);
@@ -50,6 +63,8 @@ const APIKEY ='47b8c411cbaefbb5c821ccfce0e210fa';
         <input type="text" className='city' placeholder='City' name='city' onChange={(e)=>handleChange(e)} />
         <input type="text"  className='country' placeholder='Country' name='country' onChange={(e) =>handleChange(e)} />
          <button className='subBtn' onClick={(e)=>weatherMain(e)}>Check Weather</button>
+         {/* <input type="datetime-local" /> */}
+         
 
 
       </form>
