@@ -1,4 +1,4 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,6 +15,7 @@
     color: cadetblue;
     position: absolute;
     margin-top: 120px;
+    font-family: 'Catamaran', sans-serif;
 }
 
 .header{
@@ -27,8 +28,10 @@
     background-clip: text;
     background-image: url(https://i.redd.it/e3bnymw0dca61.jpg);
     color: transparent;
+    animation-duration: 4s;
 }     
 .Degree{
+
     justify-content: start;
 
     color: white;
@@ -52,4 +55,13 @@ p{
 .Celcius{
     font-size: 80px;
     background-color: transparent;
+}
+
+span{
+
+    content: "\212A";
+}
+.c{
+
+ content: "\2103";
 }
