@@ -10,8 +10,7 @@ const WeaApp = ({main}) => {
   const weatherDescription2 = main.weather.icon;
   const humidity = main.main.humidity;
   const wind = main.wind.speed;
-  const  sys =main.sys.sunrise;
-  const  sys2 =main.sys.sunset;
+
   console.log('we',main)
  
   return (
