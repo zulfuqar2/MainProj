@@ -23,6 +23,12 @@ const store = createStore(weatherReducer);
 export default store;
 
 
+// import { getCurrentTime } from '../state/store/timezone';
+
+// const initialState = {
+//   weather: [],
+//   currentTime: getCurrentTime()
+// };
 
 
 

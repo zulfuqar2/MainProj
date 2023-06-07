@@ -1,7 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Current from '../src/components/Current';
+// import Current from '../src/components/Current';
 import WeApp from '../src/components/WeApp'
+
+
+
 const App = ({ location }) => {
   return (
     <div>
@@ -10,8 +13,13 @@ const App = ({ location }) => {
           Location at now: {location.latitude}, {location.longitude}
         </div>
       )}
-      <Current />
+      <div className='sa'>     
+      {/* <Current /> */}
       <WeApp/>
+
+
+      </div>
+
     </div>
   );
 };

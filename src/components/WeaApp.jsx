@@ -18,14 +18,14 @@ const WeaApp = ({main}) => {
       <h2 className='header'>Wheather App</h2>
       <div className='tem'>
       <p className='Celcius'> {tempratureC}<span className='c'>&#8451;</span> </p>
-      <p className='Degree'> {main.main.temp?temprature:null} <span>&#8490;</span></p>
+      {/* <p className='Degree'> {main.main.temp?temprature:null} <span>&#8490;</span></p> */}
       
       </div>
       <p className='Wheather'>Wheather: {main.weather?weatherDescription:null}</p>
       <p className='icon'>{main.weather?weatherDescription2:null}</p>
      
-      <p className='Huidity'>Humidtiy: {main.main.humidity?humidity:null}%</p>
-      <p className='wind'>Wind:{wind? wind :null} km/saat</p> 
+      <p className='Huidity'>Humidtiy: {main.main.humidity?humidity:null} %</p>
+      <p className='wind'>Wind:  {wind? wind :null}  km/h</p> 
 
     </div>
   );

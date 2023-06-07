@@ -1,6 +1,8 @@
 import React ,{useState}from 'react'
 import './WeApp.css'
 import WeaApp from '../components/WeaApp'
+// import CurrentTime from './CurrentTime';
+
 
 const successCallback = (position) => {
   const { latitude, longitude } = position.coords;
@@ -62,7 +64,8 @@ const APIKEY ='47b8c411cbaefbb5c821ccfce0e210fa';
       <form action="">
         <input type="text" className='city' placeholder='City' name='city' onChange={(e)=>handleChange(e)} />
         <input type="text"  className='country' placeholder='Country' name='country' onChange={(e) =>handleChange(e)} />
-         <button className='subBtn' onClick={(e)=>weatherMain(e)}>Check Weather</button>
+         <div id='container'><button className='subBtn' onClick={(e)=>weatherMain(e)}>Check Weather</button></div>
+         
          {/* <input type="datetime-local" /> */}
          
 
@@ -71,6 +74,7 @@ const APIKEY ='47b8c411cbaefbb5c821ccfce0e210fa';
       {Weather.main !==undefined?(
         <div>
           <WeaApp main ={Weather}/>
+          {/* <CurrentTime/> */}
         </div>
       ):null}
     </div>
@@ -78,9 +82,11 @@ const APIKEY ='47b8c411cbaefbb5c821ccfce0e210fa';
 
 
     </div>
+    <div>
+
+    </div>
     
-    
-    
+
     </>
   )
 }
