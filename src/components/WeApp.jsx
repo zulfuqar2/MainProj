@@ -3,6 +3,8 @@ import './WeApp.css';
 import WeaApp from '../components/WeaApp';
 import SayHi from './SayHi';
 import CurrentTime from '../components/CurrentTime';
+import Abouts from './abouttome/Abouts';
+
 
 
 const successCallback = (position) => {
@@ -53,7 +55,9 @@ function WeApp() {
 
   return (
     <>
+    
       <div className='weapp'>
+        
 
         {/* <span className='title'>My Weather App</span> */}
         <br />
@@ -62,6 +66,7 @@ function WeApp() {
             <input type="text" className='city' placeholder='City' name='city' onChange={(e) => handleChange(e)} />
             <input type="text" className='country' placeholder='Country' name='country' onChange={(e) => handleChange(e)} />
             <div id='container'><button className='subBtn' onClick={(e) => weatherMain(e)}>Check Weather</button></div>
+             <Abouts/>
             <SayHi/>
             <CurrentTime/>
 

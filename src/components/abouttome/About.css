@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navigation{
+    width: 100%;
+    height: 50px;
+    filter: blur(3px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav{
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+}
+nav:hover{
+filter: none;
+}
+
+.p{
+    color: black;
+   
+}
+nav:hover{
+    background-color: cornflowerblue;
+}
