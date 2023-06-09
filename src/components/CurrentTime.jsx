@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-const API_KEY = '2aff2ce987004ee6be6fe1aacea5e0a3';
-const location = 'Asia/Baku';
+const API_KEY = "2aff2ce987004ee6be6fe1aacea5e0a3";
+const location = "Asia/Baku";
 
 const CurrentTime = () => {
   const [data, setData] = useState(null);
@@ -11,16 +11,16 @@ const CurrentTime = () => {
     const link = `https://api.ipgeolocation.io/timezone?apiKey=${API_KEY}&tz=${location}`;
 
     fetch(link)
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         console.log(data);
         setData(data);
       })
-      .catch(error => {
-        console.log('Hata:', error);
+      .catch((error) => {
+        console.log("Hata:", error);
         setError(error);
       });
-  }, []);
+  }, []);//dependence array 
 
   if (error) {
     return <div>Hata: {error.message}</div>;
