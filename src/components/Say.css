@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.greetings-container{
+      animation-duration: 3s  2q2a;
+      margin: 20px;
+}

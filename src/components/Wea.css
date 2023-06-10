@@ -16,6 +16,7 @@
     position: absolute;
     margin-top: 120px;
     font-family: 'Catamaran', sans-serif;
+    margin-top: 70px;
 }
 
 .header{
@@ -64,4 +65,18 @@ span{
 .c{
 
  content: "\2103";
+}
+.weather-details{
+    background-image: url(../components/img/cover.jpg);
+    color: transparent;
+    background-size: cover;
+    height: 50%;
+    width: 55%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 400px;
+
+    
 }

@@ -4,12 +4,7 @@
     box-sizing: border-box;
 }
 
-/* .WeBox{
-  border: 1px solid black;
-  width: 100%;
-  height: 100%;
-  background-color: lightskyblue;
-} */
+
 form{
     width: 100%;
     height: 100vh;
@@ -22,17 +17,14 @@ form{
     background-image:url(../components/img/satellite_loop.gif);
 
 }
-/* .whole{
-    background-image:url(../components/img/2859833.jpg);
-} */
+
 .city{
     width: 50%;
-    height: 35px;
-    border-radius: 41px;
+    height: 55px;
+    border-radius: 11px;
     text-align: center;
     justify-content: center;
     background-color: bisque;
-
     font-size: 20px;
     border: none;
     outline: none;
@@ -40,13 +32,16 @@ form{
     color: white;
 }
 .city:hover{
-    background-color:slateblue ;
+    background-color:transparent ;
+}
+::placeholder{
+    color: white;
 }
 
 .country{
     width: 40%;
-    height: 35px;
-    border-radius: 41px;
+    height: 55px;
+    border-radius: 11px;
     text-align: center;
     justify-content: center;
     font-size: 20px; 
@@ -57,10 +52,10 @@ form{
     color: white;
 }
 .country:hover{
-    background-color:slateblue ;
+    background-color:transparent;
 }
 .subBtn{
-    width: 33%;
+    width: 50%;
     height: 34px;
     font-size: 16px;
     border-radius: 32px;
@@ -68,30 +63,24 @@ form{
     border: none;
     background: transparent;
     color: aliceblue;
-
-}
-.subBtn:hover{
-    background-color:steelblue;
-}
-
-/* .weather-details{
-    width: 100%;
-    height: 100vh;
     justify-content: center;
-    align-items: center;
     text-align: center;
-    font-size: large;
-    font-weight: bold;
-    color: cadetblue;
-    
-}
+    align-items: center;
+    background: url($url) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 
-.header{
-    font-size: 100px;
-}
-.Degree{
-    justify-content: center;
-    background-color:slategray;
-    color: white;
+    }
+
+    .subBtn{
+        filter: blur(5px);
+        transition: filter 0.3s ease-in-out;
+    }
     
-} */
+    .subBtn:hover{
+        filter: none;
+    }
+
+   .weap{
+    margin-top: 0px;
+   }
