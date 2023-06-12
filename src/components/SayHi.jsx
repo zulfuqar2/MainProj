@@ -9,7 +9,9 @@ return (
     <div className="greetings-container">
       {showMessage && (
         <h1 className="greetings-message">
-          Welcome  to my Wheather App 
+               Welcome to my Wheather App
+           
+
         </h1>
       )}
     </div>

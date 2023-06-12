@@ -1,25 +1,38 @@
-import React from 'react'
-import '../pages/pagecss/Aboutss.css'
+import React from "react";
+import "../pages/pagecss/Aboutss.css";
 function About() {
   return (
     <>
-    <h1>Seyfullalı Zülfüqar</h1>
-     <div className='box'>
-     <p className='text'>
-      Mən Seyfullalı Zülfüqar Azərbaycan Texniki Universitetininn Biotibbi Texnelogiyalar mühəndisliyi 4 cü  kurs tələbəsiəm.
-      Front ağırlığı Full-stack developerəm  ,aşağıdakı proqlama dillərini , library framework lərini bilir və sərbəst işləyə bilirəm.
-      <ul className='list'>
-      <li>HTML</li>
-        <li>CSS</li>
-          <li>JavaScript</li>
-           <li>React</li>
-            <li>Redux</li>
-          <li>Node.js</li>
-        <li>MySql</li>
-      </ul>
-        </p>
+     <h1>Seyfullalı Zülfüqar</h1>
+    <div className="container"> 
+    <div className="wrapper">
+      <div className="profil_imgg">
+       
       </div>
-     </>
-  )
+      <div className="profil_text">
+
+      <p>Lorem ipsum dolor sit.
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  Reiciendis facere impedit laboriosam magnam voluptate ad quibusdam
+  ullam ducimus nemo, iusto aut ipsa repellendus natus nesciunt
+  assumenda ut cumque non perspiciatis ratione explicabo, at dolores
+  eveniet consectetur. Velit qui tempora illum exercitationem unde
+  excepturi molestias fuga amet similique veritatis rerum vitae
+  officiis voluptatibus aliquid ut, commodi ab voluptas doloribus
+  eum id sapiente aspernatur? Pariatur molestiae veritatis dicta
+  laudantium harum, explicabo sit ex dolorem, amet, maxime nesciunt.
+  </p>
+ 
+      </div>
+    </div>
+      
+
+
+
+
+</div>
+    
+    </>
+  );
 }
-export default About
+export default About;

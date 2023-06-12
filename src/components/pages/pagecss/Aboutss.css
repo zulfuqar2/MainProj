@@ -3,40 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.box{
-    color: black;
-    width: 100%;
-    height: 100vh;
-    background-color: thistle;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 23px;
-    margin: 20px;
-
-}
-.text{
-    color: black;
-    font-size: 23px;
-    width: 39%;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-}
-ul{
-    list-style-type: none;
+.wrapper{
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    text-align: start;
-    margin: 10px;
-    font-weight: bold;
+    background-color: beige;
+    flex-direction: row;
+}
+
+.profil_text{
+    color: black;
+    width: 50%;
+    height: 50%;
 
 }
-h1{
-    justify-content: center;
-    text-align: center;
+p{
+    color: black;
+}
+
+.profil_imgg{
+    width: 33%;
+    margin: 100px;
+    border-radius: 192px;
+    height: 500px;
+    background-image: url(../../img/cover.jpg);
 }
