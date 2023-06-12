@@ -7,9 +7,6 @@
 .weather-details{
     width: 100%;
     height: 100vh;
-    /* justify-content: center; */
-    /* align-items: center;
-    text-align: center; */
     font-size: large;
     font-weight: bold;
     color: cadetblue;
@@ -24,7 +21,6 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    /* background-image: url(https://i.redd.it/e3bnymw0dca61.jpg); */
     -webkit-background-clip: text;
     background-clip: text;
     background-image: url(https://i.redd.it/e3bnymw0dca61.jpg);

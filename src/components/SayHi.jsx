@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './Say.css'
-
 const SayHi = () => {
   const [showMessage, setShowMessage] = useState(false);
-
-  useEffect(() => {
+useEffect(() => {
     setShowMessage(true);
   }, []);
-
-  return (
+return (
     <div className="greetings-container">
       {showMessage && (
         <h1 className="greetings-message">
@@ -18,5 +15,4 @@ const SayHi = () => {
     </div>
   );
 };
-
 export default SayHi;
