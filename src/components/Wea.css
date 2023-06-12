@@ -77,18 +77,18 @@ span{
     
 } */
 .weather-details {
-    width: 65%;
+    width: 45%;
     height: 500px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.7); 
-    backdrop-filter: blur(7px); 
+    background-color: rgba(99, 91, 91, 0.409); 
+    backdrop-filter: blur(3px); 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    margin-left: 250px;
+    margin-left: 30%;
     margin-top: 300px;
   }
   
@@ -96,10 +96,10 @@ span{
     content: "";
     top: 0;
     left: 0;
-    width: 50%;
+    width: 45%;
     height: 300px;
     background-size: cover;
-    filter: blur(7px); 
+    filter: blur(3px); 
     z-index: -1;
   }
   
