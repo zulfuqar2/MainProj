@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Contact from "./components/pages/Contact";
 import Project from "./components/pages/Project";
 import About from "./components/pages/About";
+import Home from "./components/pages/Home";
 
 const App = ({ location }) => {
   return (
@@ -19,6 +20,7 @@ const App = ({ location }) => {
         <Abouts />
         <Routes>
           <Route exact path="/" element={<WeApp />} />
+          <Route exact path="/Home" element={<Home/>}/>
           <Route exact path="/about" element={<About/>}/>
           <Route exact path ="/contact" element={<Contact/>}/>
           <Route exact path = "/projects" element={<Project/>}/>

@@ -62,7 +62,7 @@ span{
 
  content: "\2103";
 }
-.weather-details{
+/* .weather-details{
     background-image: url(../components/img/cover.jpg);
     color: transparent;
     background-size: cover;
@@ -75,4 +75,31 @@ span{
     margin-top: 400px;
 
     
-}
+} */
+.weather-details {
+    width: 45%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(99, 91, 91, 0.409); 
+    backdrop-filter: blur(3px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-left: 30%;
+    margin-top: 300px;
+  }
+  
+  .weather-details::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 300px;
+    background-size: cover;
+    filter: blur(3px); 
+    z-index: -1;
+  }
+  

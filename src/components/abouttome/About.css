@@ -17,17 +17,35 @@
     display: flex;
     margin: 0;
     padding: 0;
-    background-image: url(../img/DFG3.gif);
+    background-image: url(../img/satellite_loop.gif);
     color: white;
     background-size: cover;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
 }
 .nav{
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 40px;
+    
+    >p{
+        margin-left: 150px ;
+        background-color: aqua;
+        background-color: rgba(99, 91, 91, 0.409); 
+        backdrop-filter: blur(3px); 
+    }
 }
-a{
+.nav ::before{
+    background-size: cover;
+    filter: blur(3px); 
+    z-index: -1;
+}
+/* a{
     background-color:beige;
-}
+} */
 a:hover{
     color: red;
 }
