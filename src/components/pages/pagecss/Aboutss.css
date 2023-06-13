@@ -29,14 +29,24 @@ p{
 
 
 .skills {
-    text-align: right; /* Right-align text */
-    padding-top: 10px; /* Add top padding */
-    padding-bottom: 10px; /* Add bottom padding */
-    color: white; /* White text color */
-  }
+    text-align: right;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    color: white; 
+}
   
-  .html {width: 90%; background-color: #04AA6D;} /* Green */
-  .css {width: 80%; background-color: #2196F3;} /* Blue */
-  .js {width: 65%; background-color: #f44336;} /* Red */
+  .html {width: 90%; background-color: #04AA6D;} 
+  .css {width: 80%; background-color: #2196F3;} 
+  .js {width: 65%; background-color: #f44336;}
   .react {width: 60%; background-color: #808080;}
   .redux{width: 35% ; background-color: brown;}
+  .softskill{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: white;
+  }
+.softAz{width: 95%;background-color: #04AA6D;}
+.softTr{width: 85%;background-color: red;}
+.softEn{width: 65%;background-color: #2196F3;}
+.softGr{width: 15%;background-color: blueviolet;}
