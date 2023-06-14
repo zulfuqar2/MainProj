@@ -5,9 +5,9 @@ const Abouts = () => {
   return (
     <div className="div">
       <nav className="nav">
-        <p>
+        {/* <p>
           <Link to="/Home"> Home</Link>
-        </p>
+        </p> */}
         <p>
           <Link to="/about">About</Link>
         </p>
