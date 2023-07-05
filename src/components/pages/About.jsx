@@ -9,16 +9,7 @@ function About() {
           <div className="profil_imgg"></div>
           <div className="profil_text">
             <p>
-              Lorem ipsum dolor sit. Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Reiciendis facere impedit laboriosam magnam
-              voluptate ad quibusdam ullam ducimus nemo, iusto aut ipsa
-              repellendus natus nesciunt assumenda ut cumque non perspiciatis
-              ratione explicabo, at dolores eveniet consectetur. Velit qui
-              tempora illum exercitationem unde excepturi molestias fuga amet
-              similique veritatis rerum vitae officiis voluptatibus aliquid ut,
-              commodi ab voluptas doloribus eum id sapiente aspernatur? Pariatur
-              molestiae veritatis dicta laudantium harum, explicabo sit ex
-              dolorem, amet, maxime nesciunt.
+            Salam! Mən kiçik veb tərtibatçısıyam və həvəslə veb dünyasında özümü təkmilləşdirməyə çalışıram.HTML, CSS və JavaScript kimi əsas veb texnologiyalarında möhkəm təməlim var və daim yeni şeylər öyrənməyə açıqam.Mən istifadəçi dostu və təsir edici veb saytlar yaratmaq üçün dizayn və istifadəçi təcrübəsi prinsiplərinə diqqət yetirirəm.Front-end inkişafında təcrübəm var və cavab verən veb dizayn haqqında məlumatlıyam.Git və GitHub kimi versiyaya nəzarət sistemləri ilə necə işləməyi bilirəm və əməkdaşlıqdan həzz alıram.
             </p>
             <div className="softskill">
             <h2>My Soft skills</h2>

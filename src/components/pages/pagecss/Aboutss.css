@@ -20,11 +20,12 @@ p{
 }
 
 .profil_imgg{
-    width: 33%;
+    width: 39%;
     margin: 100px;
-    border-radius: 192px;
+    border-radius: 19px;
     height: 500px;
-    background-image: url(../../img/cover.jpg);
+    background-image: url(../../img/pp.jpg);
+    background-size: cover;
 }
 
 
